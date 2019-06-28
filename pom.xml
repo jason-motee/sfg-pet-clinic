@@ -19,8 +19,6 @@
     <description>SFG Pet Clinic Project</description>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
 
@@ -35,6 +33,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
         </plugins>
@@ -42,6 +41,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/jason-motee/sfg-pet-clinic.git</developerConnection>
+        <tag>sfg-pet-clinic-0.0.1</tag>
     </scm>
 
 </project>
